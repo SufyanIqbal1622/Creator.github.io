@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Tangerine");
+
+.fixed-bottom {
+  background:  #524e4e56;
+}
+
+.text-danger {
+  font-family: "Tangerine", cursive;
+}

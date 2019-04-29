@@ -1,0 +1,55 @@
+<section id="showCase">
+    <div class="primary-overlay text-dark">
+      <div id="demo" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner " id="set1" >
+          <div class="carousel-item active">
+            <img src="..\assets\st2.jpeg" alt="Los Angeles" width="1100" height="531">
+            <div class="carousel-caption">
+              <h3>No matter how busy you may think you are, you must find time for reading, or surrender yourself to self-chosen ignorance.</h3>
+              <!-- <p>Once Upon A Time !</p> -->
+            </div>   
+          </div>
+          <div class="carousel-item set">
+            <img src="..\assets\st1.jpeg" alt="Chicago" width="1100" height="531">
+            <div class="carousel-caption">
+              <h3>To acquire knowledge, one must study; but to acquire wisdom, one must observe.</h3>
+              <!-- <p>The Two Thrones</p> -->
+            </div>   
+          </div>
+          <div class="carousel-item set">
+            <img src="..\assets\st6.jpg" alt="New York" width="1100" height="531">
+            <div class="carousel-caption">
+              <h3>Every beginner possesses a great potential to be an expert in his or her chosen field.</h3>
+              <!-- <p>The Agent is back.. !</p> -->
+            </div>   
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+      <div class="row mxy-4">
+        <div class="col-lg-7 text-center">
+          
+          
+          <a
+            [ngClass]="{ disabled: userStatus == 'Logout' }"
+            id="joinus"
+            routerLink="/register"
+            routerLinkActive="border-bottom border-danger active"
+            class="btn  btn-lg text-capitalize   mx-4 btn-warning text-danger mt-6"
+            >Join Us</a
+          >
+        </div>
+        
+      </div>
+    </div>
+  </section>

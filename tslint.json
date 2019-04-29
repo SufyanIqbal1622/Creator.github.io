@@ -31,6 +31,21 @@
         ]
       }
     ],
+    "extends": "../tslint.json",
+    "rules": {
+        "directive-selector": [
+            true,
+            "attribute",
+            "app",
+            "camelCase"
+        ],
+        "component-selector": [
+            true,
+            "element",
+            "app",
+            "kebab-case"
+        ]
+    },
     "no-consecutive-blank-lines": false,
     "no-console": [
       true,
@@ -71,5 +86,6 @@
     "use-pipe-transform-interface": true,
     "component-class-suffix": true,
     "directive-class-suffix": true
+    
   }
 }

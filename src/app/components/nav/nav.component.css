@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css?family=Tangerine");
+@import url("https://fonts.googleapis.com/css?family=Nova+Flat|Pacifico");
+@import url("https://fonts.googleapis.com/css?family=Pacifico");
+.navbar {
+  background: #524e4e56;
+
+  font-size: 2.5rem;
+}
+
+.navbar-brand {
+  /* font-family: "Coiny", cursive; */
+  font-family: "Pacifico", cursive;
+  font-size: 1.5rem;
+}
+
+ul {
+  font-family: "Tangerine", cursive;
+}
+
+#login {
+  font-family: "Tangerine", cursive;
+}
+
+.disabled {
+  pointer-events: none;
+  
+}

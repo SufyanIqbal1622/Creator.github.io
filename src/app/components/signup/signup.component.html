@@ -1,0 +1,116 @@
+<app-nav></app-nav>
+
+<section id="signup  bg-transparent">
+  <div class="primary-overlay  bg-transparent">
+    <div class="container ">
+      <div class="row">
+        <div class="col-lg-3 "></div>
+        <div
+          class="col-lg-6 align-self-center   m-4 p-4  text-white text-center "
+        >
+          <h3 class="text-dark text-monospace my-4 py-4">Join Us </h3>
+
+          <form novalidate (ngSubmit)="onSubmit()" #join="ngForm">
+            <div class="form-group  ">
+              <input
+                class="form-control pl-4 bg-transparent   text-success"
+                type="text"
+                placeholder="Name"
+                ngModel
+                name="name"
+                #name="ngModel"
+                required
+                minlength="6"
+              />
+            </div>
+            <span
+              class="help-block text-white mb-3  float-left"
+              *ngIf="name.errors?.required && name.touched"
+            >
+              Name field can't be blank
+            </span>
+            <span
+              class="help-block text-white mb-3  float-left"
+              *ngIf="name.errors?.minlength && name.touched"
+            >
+              Length should be atleast 6 to 10 characters
+            </span>
+
+            <div class="form-group">
+              <input
+                class="form-control pl-4 bg-transparent  text-success"
+                type="email"
+                placeholder="Email"
+                ngModel
+                #email="ngModel"
+                name="email"
+                required
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+              />
+            </div>
+            <span
+              class="help-block text-white mb-3  float-left"
+              *ngIf="email.errors?.required && email.touched"
+            >
+              Email field can't be blank
+            </span>
+            <span
+              class="help-block text-white mb-3  float-left"
+              *ngIf="email.errors?.pattern && email.touched"
+            >
+              Enter valid email (format should be Creators@gmail.com  )
+            </span>
+
+            <div class="form-group">
+              <input
+                class="form-control pl-4 bg-transparent text-success "
+                type="password"
+                placeholder="Password"
+                ngModel
+                name="password"
+                #password="ngModel"
+                required
+                minlength="8"
+              />
+            </div>
+            <span
+              class="help-block text-white mb-3  float-left"
+              *ngIf="password.errors?.required && password.touched"
+            >
+              Enter your password
+            </span>
+            <span
+              class="help-block text-white mb-3  float-left"
+              *ngIf="password.errors?.minlength && password.touched"
+            >
+              Use 8 or more characters for your password
+            </span>
+              <input
+              class="btn btn-danger btn-block text-white"
+              type="submit"
+              value="Join Now"
+              [disabled]="!join.valid"
+            />
+            <h5> Name:    {{ name.value}}</h5>
+            <h5>Email:     {{email.value}}</h5>
+            <h5>Password: {{password.value}}</h5>
+          </form>
+          <p class="lead my-4">
+            Already have an account ?
+            <span
+              ><a
+                class="text-danger"
+                routerLink="/login"
+                routerLinkActive="border-bottom border-danger active"
+              >
+                Login</a
+              ></span
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<app-footer></app-footer>

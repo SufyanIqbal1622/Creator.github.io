@@ -1,0 +1,54 @@
+[
+    
+    { 
+        "courseTitle":"CourseTitle: Introduction to HTML and CSS",
+         "courseNo":"CourseNo: 1",
+         "courseName":"CourseName: Html and Css",
+         "courseCreditHours":"courseCreditHours 3",
+         "courseTeacher":"CourseTeacher: Sir Umair",
+         "courseAssignments": "CourseAssignments:  Resume, Aspire College Form , Semantic Versioning , Push files to Github , Send Request using Postman , Http Status Codes "
+    },
+    
+    
+     { 
+         "courseTitle":" CourseTitle: JavaScript Basics",
+         "courseNo":"CourseNo: 2",
+        "courseName":"CourseName: JavaScript",
+        "courseCreditHours":"CourseCreditHours: 4",
+        "courseTeacher":"CourseTeacher: Sir Umair",
+        "courseAssignments": "CourseAssignments:  Fetching data from API , Changing DOM , Event listener , setTimeout() function "
+    
+    
+    },
+    
+    
+   
+    { 
+        "courseTitle":"CourseTitle: Bootstrap 4 Basics",
+         "courseNo":"courseNo: 3",
+        "courseName":"CourseName:  Bootstap",
+        "courseCreditHours":"CourseCreditHours: 3",
+        "courseTeacher":"CourseTeacher: Sir Umair",
+        "courseAssignments": " CourseAssignments: Grid System , Aspire Form Using Bootstrap , Contact Form Using Bootstrap  , Resume Using Bootstrap "
+    
+    
+    },
+    
+    
+    
+    { 
+        "courseTitle":"CourseTitle: Angular Basics",
+         "courseNo":"CourseNo: 4",
+        "courseName":"CourseName: Angular 7",
+        "courseCreditHours":"CourseCreditHours: 4",
+        "courseTeacher":"CourseTeacher: Sir Umair",
+        "courseAssignments": "CourseAssignments:  Install AngularCli , Angular Create new Component , HttpClientModule  , Routing  , Services , Model "
+        
+    
+    
+    }
+
+
+
+
+      ]

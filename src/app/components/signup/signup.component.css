@@ -1,0 +1,40 @@
+#signup {
+    position: relative;
+    
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #464646;
+  
+    min-height: 940px;
+    width: 100%;
+  }
+  
+  .primary-overlay {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  select option {
+    color: whitesmoke;
+    background: rgb(71, 60, 60);
+  }
+  
+  input.ng-invalid.ng-touched {
+    border: 1px solid red;
+  }
+  input.ng-valid.ng-touched {
+    border: 1px solid darkgreen;
+  }
+  
+  select.ng-invalid.ng-touched {
+    border: 1px solid red;
+  }
+  select.ng-valid.ng-touched {
+    border: 1px solid darkgreen;
+  }

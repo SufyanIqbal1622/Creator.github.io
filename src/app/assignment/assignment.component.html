@@ -1,0 +1,53 @@
+<div class="container bg-transparent">
+  <h2>Assignments</h2>
+  <div id="accordion">
+    <div class="card bg-transparent text-dark">
+      <div class="card-header">
+        <a class="card-link" data-toggle="collapse" href="#one" (click)="getAspAssignments()">
+         <h4 class= "text-dark"> Course # 1 Assignments 
+        </h4>         </a>
+      </div>
+      <div id="one" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          <div *ngIf="ASPassignment">
+              <div *ngFor="let asp of ASPassignment.desc; let i=index">
+                {{ i + 1 }}. {{ asp }}
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card bg-transparent text-dark">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#two" (click)="getPHPassignments()">
+          <h4 class= "text-dark"> Course # 2 Assignments 
+          </h4>         </a>
+      </div>
+      <div id="two" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+            <div *ngIf="PHPassignment">
+                <div *ngFor="let php of PHPassignment.desc; let i=index">
+                  {{ i + 1 }}. {{ php }}
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="card bg-transparent text-dark">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#three" (click)="getAngularAssignments()">
+          <h4 class= "text-dark"> Course # 3 Assignments 
+          </h4>         </a>
+      </div>
+      <div id="three" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+            <div *ngIf="AngularAssignment">
+                <div *ngFor="let angular of AngularAssignment.desc; let i=index">
+                  {{ i + 1 }}. {{ angular }}
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

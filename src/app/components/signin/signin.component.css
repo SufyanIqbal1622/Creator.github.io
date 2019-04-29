@@ -1,0 +1,35 @@
+#signin {
+    position: relative;
+    
+    background-position: center ;
+    background-attachment: fixed;
+  
+  
+    min-height: 940px;
+    width: 100%;
+  }
+  
+  .primary-overlay {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  
+    background: rgba(0, 0, 0, 0.2);
+  }
+  .mybg {
+    background: rgba(126, 53, 53, 0.7);
+    color: whitesmoke;
+  }
+  
+  .mybg:hover {
+    background: rgb(138, 57, 57);
+    color: white;
+  
+    border: 0;
+  }
+  
+  input.ng-invalid.ng-touched {
+    border-left: 1px solid yellow;
+  }

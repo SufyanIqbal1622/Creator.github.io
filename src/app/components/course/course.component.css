@@ -1,0 +1,13 @@
+#coursebackground {
+    position: relative;
+    
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #464646;
+  
+    height: 4300px;
+    max-height: auto;
+    width: 100%;
+  }
+  

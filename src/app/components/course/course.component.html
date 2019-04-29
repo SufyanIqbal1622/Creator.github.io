@@ -1,0 +1,71 @@
+
+<div class="container bg-transparent ">
+  <h2>Available Courses</h2>
+  <div id="accordion">
+    <div class="card bg-transparent text-dark">
+      <div class="card-header">
+        <a class="card-link" data-toggle="collapse" href="#collapseOne" (click)="getASPInfo()">
+         <h4 class="text-dark">Course #1</h4> 
+        </a>
+      </div>
+      <div id="collapseOne" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          <h6> Course Details </h6>
+          <div *ngIf="ASPresult ">
+            <ul >
+              <li>Course ID:  {{ ASPresult.courseCode }} </li>
+              <li>Course Title: {{ ASPresult.courseTitle | uppercase }} </li>
+              <li>Course Duration: {{ ASPresult.courseHours }} </li>
+              <li>Course Instructor: {{ ASPresult.courseInstructor }} </li>
+            </ul>
+           
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card bg-transparent text-dark">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo" (click)="getPHPinfo()">
+          <h4 class="text-dark">Course #2</h4> 
+        </a>
+      </div>
+      <div id="collapseTwo" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          <h6> Course Details </h6>
+          <div *ngIf="PHPresult">
+            <ul>
+              <li>Course ID:  {{ PHPresult.courseCode }} </li>
+              <li>Course Title: {{ PHPresult.courseTitle | uppercase }} </li>
+              <li>Course Duration: {{ PHPresult.courseHours }} </li>
+              <li>Course Instructor: {{ PHPresult.courseInstructor }} </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card bg-transparent text-dark">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree" (click)="getWebInfo()">
+          <h4 class="text-dark">Course #3</h4> 
+        </a>
+      </div>
+      <div id="collapseThree" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          <h6> Course Details </h6>
+          <div *ngIf="Webresult">
+            <ul>
+              <li>Course ID:  {{ Webresult.courseCode }} </li>
+              <li>Course Title: {{ Webresult.courseTitle | uppercase }} </li>
+              <li>Course Duration: {{ Webresult.courseHours }} </li>
+              <li>Course Instructor: {{ Webresult.courseInstructor }} </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <button onclick=" getC1() "> </button>  <div *ngIf="C1"> {{C1.course}} </div>
+</div>
+<footer></footer>

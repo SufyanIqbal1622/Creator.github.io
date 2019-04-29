@@ -1,0 +1,24 @@
+<app-nav></app-nav>
+<section id="dashboard">
+<div class="fluid-container">
+  <div class="jumbotron bg-transparent">
+    <div class="row ">
+      <div class="col-lg-6 container">
+        <button type="button" class="btn btn-dark" data-toggle="collapse" data-target="#demo">Courses</button>
+        <hr>
+        <div id="demo" class="collapse bg-transparent">
+            <app-course></app-course>
+        </div>
+      </div>
+      <div class="col-lg-6 container">
+          <button type="button" class="btn btn-dark" data-toggle="collapse" data-target="#assignments">Assignments</button>
+          <hr>
+          <div id="assignments" class="collapse">
+            <app-assignment></app-assignment>
+          </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</section>
